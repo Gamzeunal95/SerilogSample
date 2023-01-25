@@ -8,15 +8,19 @@ namespace SerilogWebApiEntegrasyonu
         public static void Main(string[] args)
         {
             Log.Logger = new LoggerConfiguration()
-               .WriteTo.Console()
-               .CreateLogger();
+                   .WriteTo.Console()
+                   .WriteTo.Seq(@"http://localhost:5341/")
+                   .CreateLogger();
 
             try
             {
+                Log.Information("Starting web aplication");
+
                 var builder = WebApplication.CreateBuilder(args);
 
                 // Add services to the container.
 
+                builder.Host.UseSerilog();
                 builder.Services.AddControllers();
                 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
                 builder.Services.AddEndpointsApiExplorer();
