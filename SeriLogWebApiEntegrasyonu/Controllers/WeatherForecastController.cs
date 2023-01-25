@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Serilog;
 
 namespace SerilogWebApiEntegrasyonu.Controllers
 {
@@ -13,14 +14,18 @@ namespace SerilogWebApiEntegrasyonu.Controllers
 
         private readonly ILogger<WeatherForecastController> _logger;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        readonly IDiagnosticContext _diagnosticContext;
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IDiagnosticContext diagnosticContext)
         {
             _logger = logger;
+            _diagnosticContext = diagnosticContext;
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
+            _diagnosticContext.Set("CatalogLoadTime", 1423);
+
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),

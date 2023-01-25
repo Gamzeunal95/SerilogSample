@@ -13,7 +13,6 @@ namespace SerilogWebApiEntegrasyonu
 
             try
             {
-
                 var builder = WebApplication.CreateBuilder(args);
 
                 // Add services to the container.
@@ -36,16 +35,20 @@ namespace SerilogWebApiEntegrasyonu
 
                 app.UseAuthorization();
 
+                app.UseSerilogRequestLogging(); // Add this line
 
                 app.MapControllers();
 
                 app.Run();
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                Log.Fatal(ex, "Application terminated unexpectedly");
+            }
+            finally
+            {
+                Log.CloseAndFlush();
             }
         }
     }
