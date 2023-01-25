@@ -39,6 +39,7 @@ namespace SerilogWebApiEntegrasyonu
 
                 app.MapControllers();
 
+
                 app.Run();
 
             }
