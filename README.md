@@ -15,6 +15,7 @@
 	- Serilog.AspNetCore
 	- Serilog.Sinks.Seq
 - appsettings.json dosyasında erekli configuration'lar yapıldı.
+	- API KEY olusturuldu. Seq Setting kısmından bunu da bu json dosyasına ekliyoruz.
 
 
 - [Dokuman](https://github.com/serilog/serilog-aspnetcore)
