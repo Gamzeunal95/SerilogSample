@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33209.295
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeriLogConsole", "SerilogConsole\SeriLogConsole.csproj", "{359D8B8A-DF26-46AB-A21E-F3E645D317A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerilogWebApiEntegrasyonu", "SeriLogWebApiEntegrasyonu\SerilogWebApiEntegrasyonu.csproj", "{72836288-A38B-4D02-9AC6-3C61E8E19D71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{359D8B8A-DF26-46AB-A21E-F3E645D317A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{359D8B8A-DF26-46AB-A21E-F3E645D317A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{359D8B8A-DF26-46AB-A21E-F3E645D317A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{359D8B8A-DF26-46AB-A21E-F3E645D317A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72836288-A38B-4D02-9AC6-3C61E8E19D71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72836288-A38B-4D02-9AC6-3C61E8E19D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72836288-A38B-4D02-9AC6-3C61E8E19D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72836288-A38B-4D02-9AC6-3C61E8E19D71}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B54E8292-3D59-4F7A-A0FE-CFF36D110774}
+	EndGlobalSection
+EndGlobal
