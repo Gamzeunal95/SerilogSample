@@ -18,4 +18,6 @@
 	- API KEY olusturuldu. Seq Setting kısmından bunu da bu json dosyasına ekliyoruz.
 
 
+![APIKeyAlmakİçin](https://user-images.githubusercontent.com/101207897/214882672-609578fb-aecf-4f0d-8360-13e3413b51fc.png)
+
 - [Dokuman](https://github.com/serilog/serilog-aspnetcore)
