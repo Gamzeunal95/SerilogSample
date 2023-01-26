@@ -1,4 +1,4 @@
-# SerilogConsole
+# Serilog
 
 # Project 1 - SeriLogConsole
 - Serilog [siteden] (https://datalust.co/download) install edildi.
